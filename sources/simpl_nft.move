@@ -99,7 +99,7 @@ module nft::devnet_nftTests {
         // create the NFT
         let scenario = ts::begin(addr1);
         {
-            devnet_nft::mint(b"test", b"a test", b"https://www.sui.io", ts::ctx(&mut scenario))
+            devnet_nft::mint(b"FCNFT", b"Find-CTRL NFT", b"https://www.sui.io", ts::ctx(&mut scenario))
         };
         // send it from A to B
         ts::next_tx(&mut scenario, addr1);
